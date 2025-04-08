@@ -2,9 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { usePageTitle } from '../../hooks';
 import './About.css';
 
 const About: React.FC = () => {
+  // Set the page title
+  usePageTitle('Hakkımızda');
+
   // Animation variants
   const fadeIn = {
     hidden: { opacity: 0 },
@@ -48,11 +52,6 @@ const About: React.FC = () => {
     threshold: 0.1
   });
 
-  const [teamRef, teamInView] = useInView({
-    triggerOnce: true,
-    threshold: 0.1
-  });
-
   return (
     <div className="about-page">
       {/* Page Header */}
@@ -91,7 +90,7 @@ const About: React.FC = () => {
         variants={fadeIn}
       >
         <div className="container">
-          <motion.div className="about-grid">
+          <motion.div className="about-content-full">
             <motion.div 
               className="about-content"
               variants={slideUp}
@@ -103,9 +102,9 @@ const About: React.FC = () => {
                 endüstriyel otomasyon ve mekatronik çözümler alanında öncü bir firma olarak hizmet vermekteyiz.
               </p>
               <p className="about-description">
-                Firmamız, üretim hatlarının otomasyonu, makine kontrolü, proses otomasyonu ve yazılım 
-                geliştirme alanlarında uzmanlaşmış mühendislik ekibimizle müşterilerimize yenilikçi ve 
-                verimli çözümler sunmaktadır.
+                Ekibimiz, 8 yılı aşkın sektör tecrübesine sahip uzman mühendislerden oluşmaktadır. Üretim hatlarının otomasyonu, 
+                makine kontrolü, proses otomasyonu ve yazılım geliştirme alanlarındaki derin bilgi birikimimizle 
+                müşterilerimize yenilikçi ve verimli çözümler sunmaktayız.
               </p>
               <p className="about-description">
                 Teknolojik gelişmeleri yakından takip ederek, endüstriyel tesislerin ihtiyaçlarına 
@@ -121,15 +120,15 @@ const About: React.FC = () => {
                   variants={cardAnimation}
                   whileHover={{ y: -5, transition: { duration: 0.3 } }}
                 >
-                  <span className="stat-number">10+</span>
-                  <span className="stat-label">Yıllık Deneyim</span>
+                  <span className="stat-number">8+</span>
+                  <span className="stat-label">Yıllık Sektör Deneyimi</span>
                 </motion.div>
                 <motion.div 
                   className="stat-item"
                   variants={cardAnimation}
                   whileHover={{ y: -5, transition: { duration: 0.3 } }}
                 >
-                  <span className="stat-number">50+</span>
+                  <span className="stat-number">10+</span>
                   <span className="stat-label">Tamamlanan Proje</span>
                 </motion.div>
                 <motion.div 
@@ -137,21 +136,10 @@ const About: React.FC = () => {
                   variants={cardAnimation}
                   whileHover={{ y: -5, transition: { duration: 0.3 } }}
                 >
-                  <span className="stat-number">20+</span>
+                  <span className="stat-number">10+</span>
                   <span className="stat-label">Mutlu Müşteri</span>
                 </motion.div>
               </motion.div>
-            </motion.div>
-            <motion.div 
-              className="about-image"
-              initial={{ opacity: 0, x: 50 }}
-              animate={overviewInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
-              transition={{ delay: 0.4, duration: 0.7 }}
-            >
-              <div className="about-img-placeholder">
-                {/* This is a placeholder for company image */}
-                <div className="img-placeholder-text">Firma Görseli</div>
-              </div>
             </motion.div>
           </motion.div>
         </div>
@@ -270,76 +258,6 @@ const About: React.FC = () => {
               <p className="value-description">
                 Müşterilerimizin ihtiyaçlarını anlamak ve beklentilerini aşan çözümler sunmak en büyük önceliğimizdir.
               </p>
-            </motion.div>
-          </motion.div>
-        </div>
-      </motion.section>
-
-      {/* Team Section */}
-      <motion.section 
-        className="section team-section"
-        ref={teamRef}
-        initial="hidden"
-        animate={teamInView ? "visible" : "hidden"}
-        variants={fadeIn}
-      >
-        <div className="container">
-          <motion.h2 
-            className="section-title"
-            variants={slideUp}
-          >
-            Ekibimiz
-          </motion.h2>
-          <motion.p 
-            className="section-subtitle"
-            variants={slideUp}
-          >
-            Uzman ve deneyimli profesyoneller
-          </motion.p>
-          
-          <motion.div 
-            className="team-grid"
-            variants={staggerContainer}
-          >
-            {/* This is a placeholder for team members - can be filled with actual team data later */}
-            <motion.div 
-              className="team-member"
-              variants={cardAnimation}
-              whileHover={{ y: -10, scale: 1.03, transition: { duration: 0.3 } }}
-            >
-              <div className="member-image placeholder"></div>
-              <h3 className="member-name">Ad Soyad</h3>
-              <p className="member-position">Pozisyon</p>
-            </motion.div>
-            
-            <motion.div 
-              className="team-member"
-              variants={cardAnimation}
-              whileHover={{ y: -10, scale: 1.03, transition: { duration: 0.3 } }}
-            >
-              <div className="member-image placeholder"></div>
-              <h3 className="member-name">Ad Soyad</h3>
-              <p className="member-position">Pozisyon</p>
-            </motion.div>
-            
-            <motion.div 
-              className="team-member"
-              variants={cardAnimation}
-              whileHover={{ y: -10, scale: 1.03, transition: { duration: 0.3 } }}
-            >
-              <div className="member-image placeholder"></div>
-              <h3 className="member-name">Ad Soyad</h3>
-              <p className="member-position">Pozisyon</p>
-            </motion.div>
-            
-            <motion.div 
-              className="team-member"
-              variants={cardAnimation}
-              whileHover={{ y: -10, scale: 1.03, transition: { duration: 0.3 } }}
-            >
-              <div className="member-image placeholder"></div>
-              <h3 className="member-name">Ad Soyad</h3>
-              <p className="member-position">Pozisyon</p>
             </motion.div>
           </motion.div>
         </div>

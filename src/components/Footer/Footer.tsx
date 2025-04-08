@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
           <div className="footer-section about">
             <h3 className="footer-title">METOT MEKATRONİK</h3>
             <p>
-              More than Automation. Otomasyon sistemleri, mühendislik ve yazılım çözümleri sunan profesyonel bir firmayız.
+              More than Automation. 8+ yıllık sektör deneyimine sahip uzman kadromuzla otomasyon sistemleri, mühendislik ve yazılım çözümleri sunan profesyonel bir mühendislik firmasıyız.
             </p>
             <div className="social-links">
               <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="social-link">
@@ -30,7 +30,6 @@ const Footer: React.FC = () => {
               <li><Link to="/">Ana Sayfa</Link></li>
               <li><Link to="/about">Hakkımızda</Link></li>
               <li><Link to="/services">Hizmetler</Link></li>
-              <li><Link to="/projects">Projeler</Link></li>
               <li><Link to="/contact">İletişim</Link></li>
             </ul>
           </div>

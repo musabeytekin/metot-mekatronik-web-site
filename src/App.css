@@ -88,29 +88,31 @@ img {
   cursor: pointer;
   transition: all 0.3s ease;
   border: none;
+  text-decoration: none;
 }
 
 .btn-primary {
   background-color: var(--secondary-color);
-  color: white;
+  color: white !important;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .btn-primary:hover {
   background-color: var(--secondary-color-dark);
+  color: white !important;
   transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .btn-secondary {
   background-color: white;
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
   border: 1px solid var(--primary-color);
 }
 
 .btn-secondary:hover {
   background-color: var(--primary-color);
-  color: white;
+  color: white !important;
   transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }

@@ -2,9 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { usePageTitle } from '../../hooks';
 import './Services.css';
 
 const Services: React.FC = () => {
+  // Set the page title
+  usePageTitle('Hizmetlerimiz');
+
   // Animation variants
   const fadeIn = {
     hidden: { opacity: 0 },
@@ -200,7 +204,7 @@ const Services: React.FC = () => {
       </motion.section>
 
       {/* Industries We Serve */}
-      <motion.section 
+      {/* <motion.section 
         className="section industries-section"
         ref={industriesRef}
         initial="hidden"
@@ -298,7 +302,7 @@ const Services: React.FC = () => {
             </motion.div>
           </motion.div>
         </div>
-      </motion.section>
+      </motion.section> */}
 
       {/* Our Approach Section */}
       <motion.section 

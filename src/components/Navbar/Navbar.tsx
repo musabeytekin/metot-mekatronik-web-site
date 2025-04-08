@@ -53,9 +53,6 @@ const Navbar: React.FC = () => {
             <li className={location.pathname === '/services' ? 'active' : ''}>
               <Link to="/services">Hizmetler</Link>
             </li>
-            <li className={location.pathname === '/projects' ? 'active' : ''}>
-              <Link to="/projects">Projeler</Link>
-            </li>
             <li className={location.pathname === '/contact' ? 'active' : ''}>
               <Link to="/contact">İletişim</Link>
             </li>

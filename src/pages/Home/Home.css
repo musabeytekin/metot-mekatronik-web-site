@@ -126,24 +126,26 @@
 
 .btn-primary {
   background-color: var(--primary-color);
-  color: white;
+  color: white !important;
   border: 2px solid var(--primary-color);
 }
 
 .btn-primary:hover {
   background-color: var(--primary-color-dark);
+  color: white !important;
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(var(--primary-rgb), 0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .btn-outline {
   background-color: transparent;
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
   border: 2px solid var(--primary-color);
 }
 
 .btn-outline:hover {
-  background-color: rgba(var(--primary-rgb), 0.1);
+  background-color: rgba(44, 82, 130, 0.1);
+  color: var(--primary-color) !important;
   transform: translateY(-3px);
 }
 
