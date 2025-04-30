@@ -63,22 +63,8 @@
 }
 
 .social-icon {
-  font-size: 0;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 18px;
   width: 18px;
   height: 18px;
-}
-
-.linkedin::before {
-  content: "LinkedIn";
-  font-size: 0;
-}
-
-.instagram::before {
-  content: "Instagram";
-  font-size: 0;
 }
 
 .footer-links {
