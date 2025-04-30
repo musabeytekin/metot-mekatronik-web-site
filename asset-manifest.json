@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/metot-mekatronik-web-site/static/css/main.e8bdd8e2.css",
-    "main.js": "/metot-mekatronik-web-site/static/js/main.ac3be345.js",
+    "main.css": "/metot-mekatronik-web-site/static/css/main.7572739f.css",
+    "main.js": "/metot-mekatronik-web-site/static/js/main.6fe7ac86.js",
     "static/js/453.aa65bec8.chunk.js": "/metot-mekatronik-web-site/static/js/453.aa65bec8.chunk.js",
     "static/media/logo.png": "/metot-mekatronik-web-site/static/media/logo.5597096da9d53b62d059.png",
     "index.html": "/metot-mekatronik-web-site/index.html",
-    "main.e8bdd8e2.css.map": "/metot-mekatronik-web-site/static/css/main.e8bdd8e2.css.map",
-    "main.ac3be345.js.map": "/metot-mekatronik-web-site/static/js/main.ac3be345.js.map",
+    "main.7572739f.css.map": "/metot-mekatronik-web-site/static/css/main.7572739f.css.map",
+    "main.6fe7ac86.js.map": "/metot-mekatronik-web-site/static/js/main.6fe7ac86.js.map",
     "453.aa65bec8.chunk.js.map": "/metot-mekatronik-web-site/static/js/453.aa65bec8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e8bdd8e2.css",
-    "static/js/main.ac3be345.js"
+    "static/css/main.7572739f.css",
+    "static/js/main.6fe7ac86.js"
   ]
 }
