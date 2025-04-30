@@ -15,10 +15,10 @@ const Footer: React.FC = () => {
               More than Automation. 8+ yıllık sektör deneyimine sahip uzman kadromuzla otomasyon sistemleri, mühendislik ve yazılım çözümleri sunan profesyonel bir mühendislik firmasıyız.
             </p>
             <div className="social-links">
-              <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="social-link">
+              <a href="https://www.linkedin.com/company/metot-mekatronik/" target="_blank" rel="noopener noreferrer" className="social-link">
                 <i className="social-icon linkedin">LinkedIn</i>
               </a>
-              <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" className="social-link">
+              <a href="https://www.instagram.com/metotmekatronik/" target="_blank" rel="noopener noreferrer" className="social-link">
                 <i className="social-icon instagram">Instagram</i>
               </a>
             </div>
@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <i className="icon phone"></i>
-                <span>+90 000 000 00 00</span>
+                <span>+90 505 125 48 08</span>
               </li>
             </ul>
           </div>
