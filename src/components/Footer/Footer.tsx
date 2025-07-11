@@ -51,7 +51,11 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <i className="icon email"></i>
-                <span>muhasebe@metotmekatronik.com</span>
+                <span>info@metotmekatronik.com</span>
+              </li>
+              <li>
+                <i className="icon phone"></i>
+                <span>+90 535 964 21 08</span>
               </li>
               <li>
                 <i className="icon phone"></i>

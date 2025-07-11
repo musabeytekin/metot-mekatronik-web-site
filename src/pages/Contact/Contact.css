@@ -148,6 +148,29 @@
   transform: translateX(5px);
 }
 
+/* Multiple Phone Links */
+.contact-card-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: auto;
+  width: 100%;
+}
+
+.contact-card-links .contact-card-link {
+  margin-top: 0;
+  justify-content: center;
+  padding: 8px 16px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.contact-card-links .contact-card-link:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
 /* WhatsApp Contact Section */
 .whatsapp-contact {
   background: linear-gradient(135deg, #075e54 0%, #128c7e 100%);

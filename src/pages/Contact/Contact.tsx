@@ -74,6 +74,7 @@ const Contact: React.FC = () => {
               </div>
                     <h3>Telefon</h3>
                     <p>+90 535 964 21 08</p>
+                    <p>+90 505 125 48 08</p>
               <a href="tel:+905359642108" className="contact-card-link">
                 Bizi Arayın
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor" className="arrow-icon">
