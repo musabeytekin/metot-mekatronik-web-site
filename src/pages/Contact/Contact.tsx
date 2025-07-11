@@ -8,7 +8,7 @@ const Contact: React.FC = () => {
   usePageTitle('İletişim');
   
   // WhatsApp number - replace with your actual WhatsApp business number
-  const whatsappNumber = "905359642108"; // replace with your actual number
+  const whatsappNumber = "905051254808"; // replace with your actual number
   const whatsappMessage = "Merhaba, METOT MEKATRONİK hakkında bilgi almak istiyorum.";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
