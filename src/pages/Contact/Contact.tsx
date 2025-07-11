@@ -8,7 +8,7 @@ const Contact: React.FC = () => {
   usePageTitle('İletişim');
   
   // WhatsApp number - replace with your actual WhatsApp business number
-  const whatsappNumber = "905051254808"; // replace with your actual number
+  const whatsappNumber = "905359642108"; // replace with your actual number
   const whatsappMessage = "Merhaba, METOT MEKATRONİK hakkında bilgi almak istiyorum.";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
@@ -56,8 +56,8 @@ const Contact: React.FC = () => {
                 </svg>
               </div>
                     <h3>E-posta</h3>
-                    <p>muhasebe@metotmekatronik.com</p>
-              <a href="mailto:muhasebe@metotmekatronik.com" className="contact-card-link">
+                    <p>info@metotmekatronik.com</p>
+              <a href="mailto:info@metotmekatronik.com" className="contact-card-link">
                 E-posta Gönder
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor" className="arrow-icon">
                   <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/>
@@ -73,8 +73,8 @@ const Contact: React.FC = () => {
                 </svg>
               </div>
                     <h3>Telefon</h3>
-                    <p>+90 505 125 48 08</p>
-              <a href="tel:+905051254808" className="contact-card-link">
+                    <p>+90 535 964 21 08</p>
+              <a href="tel:+905359642108" className="contact-card-link">
                 Bizi Arayın
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor" className="arrow-icon">
                   <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/>
@@ -82,16 +82,7 @@ const Contact: React.FC = () => {
               </a>
                 </div>
                 
-            {/* Working Hours Card */}
-            <div className="contact-card">
-              <div className="contact-card-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor">
-                  <path d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/>
-                </svg>
-              </div>
-                    <h3>Çalışma Saatleri</h3>
-                    <p>Pazartesi - Cuma: 09:00 - 18:00</p>
-                </div>
+
               </div>
               
           {/* WhatsApp Contact Section */}
