@@ -55,11 +55,11 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <i className="icon phone"></i>
-                <span>+90 535 964 21 08</span>
+                <span>+90 505 125 48 08</span>
               </li>
               <li>
                 <i className="icon phone"></i>
-                <span>+90 505 125 48 08</span>
+                <span>+90 535 964 21 08</span>
               </li>
             </ul>
           </div>
